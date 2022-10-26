@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.pac-container {
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+   Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+   box-shadow: #282828;
+ }
+
+ .pac-item,
+ .pac-item-query {
+  color: #282828;
+ }
+ .pac-item:hover {
+  background: rgb(239, 239, 239);
+ }
+
+ .App{
+  width:40%;
+  margin: auto;
+ }
+
+.heading{
+  padding:12px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading h1{
+  font-size: 28px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading a{
+  text-decoration: none;
+  color:#6A49E2;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.field{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 8px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.field label{
+  padding:4px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.field input{
+  padding:12px 8px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.btn{
+  width: 100%;
+  padding:12px 0px;
+  margin:12px 0px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6A49E2;
+  color:white;
+  cursor: pointer;
+}
+
+.flexing{
+  display: flex;
+  justify-content: space-between;
+}
+
+.innerRight{
+  text-align: right;
+}
+
+.label{
+  font-weight: bold;
+  margin:0px;
+  padding:0px;
+  color:#6A49E2;
+}
+
+.value{
+  margin:0px;
+  padding:0px;
+  color: #2a2a2a;
+}
+
+.inner{
+  padding:12px 0px;
+}
+
+iframe{
+  padding:12px 0px;
+}
+
+
+@media(max-width: 768px) {
+  .App{
+    width:70%;
+    margin: auto;
+   }
+}
+
+@media(max-width: 455px) {
+  .App{
+    width:90%;
+    margin: auto;
+   }
 }
