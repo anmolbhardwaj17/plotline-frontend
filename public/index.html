@@ -39,6 +39,29 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAACMjwookXNCGt0AE5HqH42ufGhVWF5d0",
+        authDomain: "plotline-fe.firebaseapp.com",
+        projectId: "plotline-fe",
+        storageBucket: "plotline-fe.appspot.com",
+        messagingSenderId: "736831185794",
+        appId: "1:736831185794:web:292d7be14846d8f9ab659b",
+        measurementId: "G-9N3GK3LBMQ"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
   <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB347ZMAloVaqMS0p91sHQieEy5vXzynUk&libraries=places&callback=initMap">

@@ -17,9 +17,7 @@ const [openSnackbar] = useSnackbar()
 
  useEffect(() => {
   const options = {
-    componentRestrictions: { country: "ng" },
-    fields: ["address_components", "geometry", "icon", "name"],
-    types: ["establishment"]
+    fields: ["address_components", "geometry", "icon", "name"]
    };
 
   autoCompleteSourceRef.current = new window.google.maps.places.Autocomplete(
@@ -66,7 +64,7 @@ const [openSnackbar] = useSnackbar()
     .catch(error => console.log('error', error));
 
     if (result.status !== 200) {
-      return openSnackbar('Failed') 
+      return openSnackbar('Not able to find road linking these') 
     }
     if(!result.data[0].source || !result.data[0].destination || !result.data[0].duration || !result.data[0].distance){
       return openSnackbar('Failed to fetch all info')
